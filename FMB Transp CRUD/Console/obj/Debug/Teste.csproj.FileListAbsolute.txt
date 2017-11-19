@@ -1,0 +1,12 @@
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Console.exe.config
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Console.exe
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Console.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\obj\Debug\Teste.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\obj\Debug\Console.exe
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Console\obj\Debug\Console.pdb

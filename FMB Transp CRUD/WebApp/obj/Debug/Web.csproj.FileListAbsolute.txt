@@ -1,0 +1,102 @@
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.FMB.Web.dll.config
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.FMB.Web.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.FMB.Web.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.DAO.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Servico.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\itextsharp.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\MoreLinq.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Helpers.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Http.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Mvc.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Optimization.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Razor.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\WebGrease.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.DAO.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Amon.Servico.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\itextsharp.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\MoreLinq.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Helpers.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Http.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Mvc.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Optimization.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.Razor.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Http.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\obj\Debug\Amon.FMB.Web.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\WebApp\obj\Debug\Amon.FMB.Web.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.FMB.Web.dll.config
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.FMB.Web.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.FMB.Web.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.DAO.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Nucleo.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Persistencia.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Servico.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\itextsharp.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\MoreLinq.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Newtonsoft.Json.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Helpers.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Http.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Mvc.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Optimization.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Razor.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.Razor.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\WebGrease.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Nucleo.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Persistencia.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.DAO.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Amon.Servico.pdb
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\itextsharp.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\MoreLinq.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\Newtonsoft.Json.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Helpers.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Http.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Http.WebHost.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Mvc.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Optimization.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.Razor.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\System.Web.WebPages.Razor.xml
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Http.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Http.WebHost.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\obj\Debug\Web.csprojResolveAssemblyReference.cache
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\obj\Debug\Amon.FMB.Web.dll
+C:\Users\humbe\git\FMB Transp CRUD\WebApp\obj\Debug\Amon.FMB.Web.pdb

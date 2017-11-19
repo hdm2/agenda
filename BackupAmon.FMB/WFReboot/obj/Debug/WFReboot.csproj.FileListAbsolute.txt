@@ -1,0 +1,9 @@
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\bin\Debug\WFReboot.exe.config
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\bin\Debug\WFReboot.exe
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\bin\Debug\WFReboot.pdb
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.Form1.resources
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.Properties.Resources.resources
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.csproj.GenerateResource.Cache
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.exe
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.pdb
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\WFReboot\obj\Debug\WFReboot.csprojResolveAssemblyReference.cache

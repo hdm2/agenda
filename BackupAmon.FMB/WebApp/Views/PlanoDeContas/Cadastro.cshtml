@@ -1,0 +1,129 @@
+﻿@using Amon.Modelo.Entidades
+@using Amon.Web.Utils;
+
+@model PlanoDeContas
+
+@{
+    Layout = "~/Views/MasterPages/_LayoutPadrao.cshtml";
+}
+
+<div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+        <!-- CARD FORM FILTRO -->
+        <div class="mdl-card mdl-shadow--2dp">
+
+            @using (Html.BeginForm("Cadastrar", "PlanoDeContas", FormMethod.Post, new { Id = "form-principal" }))
+            {
+                //@Html.ValidationSummary()
+
+                <div class="mdl-grid">
+
+                    <div class="mdl-cell--12-col form-title">
+                        Cadastro Planos de Contas
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.CodCli, new { @class = "mdl-textfield__input", Value = "", pattern = REGEX.numerico })
+                            @Html.Label("Código cliente", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.CodContas, new { @class = "mdl-textfield__input", Value = "", pattern = REGEX.numerico })
+                            @Html.Label("Código conta", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.ContaReduz, new { @class = "mdl-textfield__input", Value = "", maxlength = "10", pattern = REGEX.numerico })
+                            @Html.Label("Código da conta reduzido", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.Descricao, new { @class = "mdl-textfield__input", Value = "", maxlength = "80", pattern = REGEX.textoLivre })
+                            @Html.Label("Descrição", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+                    
+
+                    <div class="mdl-cell--4-col">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.ValorOriginal, new { @class = "mdl-textfield__input input-money", Value = "", pattern = REGEX.monetario })
+                            @Html.Label("Valor original", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <label for="cb1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                            @Html.CheckBoxFor(Model => Model.Analitica, new { @class = "mdl-checkbox__input", Id = "cb1" })
+                            <span class="mdl-checkbox__label">Analítica</span>
+                        </label>
+                    </div>
+
+
+
+
+                    <div class="mdl-cell--12-col">
+                        <div class="mdl-card__actions">
+                            <button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary secondary-action acao-secundaria">Limpar</button>
+                            
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent primary-action" formnovalidate>Cadastrar</button>
+                        </div>
+                    </div>
+
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+
+<!--  SESSÃO DE SCRIPT (NÃO OBRIGATÓRIA) A SER EXECUTADA APÓS O CARREGAMENTO DESTA VIEW -->
+@section AfterScript {
+    <script type="text/javascript">
+        $(function () {
+            //$(".input-money").focusin(function () {
+            //    var valor = $(this).val();
+            //    if (valor === "") {
+            //        $(this).val("R$ " + valor);
+            //    }
+            //});
+            //$(".input-money").focusout(function () {
+            //    if ($(this).val() === "R$ ") {
+            //        $(this).val("");
+            //    }
+            //});
+
+            //Trata a submissão do Form
+            $("#form-principal").submit(function (e) {
+                $("#form-principal input, #form-principal select").each(function () {
+                    if ($(this).val() === "") {
+                        showNotification("Todos os campos são obrigatórios!");
+                        e.preventDefault();
+                        return false;
+                    }
+                });
+            });
+        });
+    </script>
+}
+
+<script type="text/javascript" src="~/Scripts/DynamicActions/PlanoContasListagemEvents.js"></script>
+
+@section AfterStyle {
+    <style type="text/css">
+    </style>
+}

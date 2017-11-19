@@ -1,0 +1,21 @@
+﻿@using Amon.PontoE.WebApp.Helpers
+@using PagedList;
+
+@model IPagedList<Amon.PontoE.Modelo.Cadastro.Funcionario>
+
+@{
+    ViewBag.Title = "Funcionario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section id="widget-grid">
+    @using (Html.iniciarLayout().setarTitulo(ViewBag.Title).setarIcone("fa fa-list").desenhar("lista"))
+    {
+        <div id="linhas" class="table-responsive">
+            @Html.Partial("_ListaGrid", Model)
+        </div>
+    }
+    @section paginacao{
+        <div id="oncomplete"></div>
+    }
+</section>

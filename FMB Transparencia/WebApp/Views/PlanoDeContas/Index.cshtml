@@ -1,0 +1,288 @@
+﻿@using Amon.Modelo.Entidades
+
+@model Amon.Web.Models.ModelTelaListagem
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/MasterPages/_LayoutListagem.cshtml";
+}
+
+<div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+        <!-- CARD FORM FILTRO -->
+        <div class="mdl-card mdl-shadow--2dp">
+
+            @using (Html.BeginForm("AcaoPrimaria", "PlanoDeContas", FormMethod.Post, new { Id = "form-principal" }))
+            {
+                @*A chamada abaixo é responsável pela exibição das mensagens de validação do formulário.*@
+                @Html.ValidationSummary()
+
+                <div class="mdl-grid">
+
+                    <div class="mdl-cell--12-col form-title" onclick="openDialog('Formulário teste', 'Teste Teste Teste Teste Teste Teste Teste.')">
+                        <!-- LARGE LABEL -->
+                        Título Formulário
+                    </div>
+
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.CodCli, new { @class = "mdl-textfield__input", pattern = "[0-9]*", Value = "" })
+                            @Html.Label("Código cliente", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.CodContas, new { @class = "mdl-textfield__input", pattern = "[0-9]*", Value = "" })
+                            @Html.Label("Código conta", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- CHECKBOX -->
+                        <label for="cb1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                            @Html.CheckBoxFor(Model => Model.obj.Analitica, new { @class = "mdl-checkbox__input", id = "cb1", @checked = "@Model.obj.Analitica" })
+                            <span class="mdl-checkbox__label">Analítica</span>
+                        </label>
+                    </div>
+
+
+
+                    @*<div class="mdl-cell--4-col">
+                            <!-- TOGGLE BUTTON -->
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+                                @Html.CheckBoxFor(Model => Model.obj.Analitica, new { @class = "mdl-switch__input", @checked = "@Model.obj.Analitica" })
+                                <span class="mdl-switch__label">Analítica</span>
+                            </label>
+                        </div>*@
+
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- SELECT LIST -->
+                        <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                            @Html.DropDownListFor(Model => Model.obj.ContaReduz, new SelectList(ViewBag.ItensDropDown, "Value", "Name"), String.Empty, new { @class = "mdl-select__input" })
+                            @Html.Label("Redução", new { @class = "mdl-select__label" })
+                        </div>
+                    </div>
+
+
+
+                    @*<div class="mdl-cell--4-col">
+                            <label>Range</label>
+                            <input id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="10" value="5" step="1" oninput="updateSliderValue(this.value)" onchange="updateSliderValue(this.value)">
+                            <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="slider1" id="slider-value" style="margin-left: 12.3%">
+                            </div>
+                        </div>*@
+
+
+
+                    <div class="mdl-cell--4-col">
+                    </div>
+
+                    @*<div class="mdl-cell--6-col">
+                            <!-- TEXT AREA -->
+                            <div class="mdl-textfield mdl-js-textfield">
+                                @Html.TextAreaFor(Model => Model.obj.CampoAlfa, new { @class = "mdl-textfield__input", rows = "3", id = "ta1" })
+                                <label class="mdl-textfield__label" for="ta1">Texto longo...</label>
+                            </div>
+                        </div>*@
+
+                    <div class="mdl-cell--4-col">
+                    </div>
+
+
+
+                    <!-- FAB BUTTONS -->
+                    @*<div class="mdl-cell--1-col">
+                            <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab mdl-button--accent">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>
+                        <div class="mdl-cell--1-col">
+                            <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab">
+                                <i class="material-icons">add</i>
+                            </a>
+                        </div>*@
+
+
+
+                    <div class="mdl-cell--12-col">
+                        <!-- ACTION BUTTONS -->
+                        <div class="mdl-card__actions">
+
+                            @*O link abaixo será usado apenas para redirecionamentos entre páginas. Neste caso, ele encaminha a navegação para esta mesma página.*@
+                            <a href='@Url.Action("LinkSimples")' class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Link simples</a>
+
+                            @*O botão abaixo é identificado como secundário por meio da classe "acao-secundaria".
+                                Com isso, ele é capaz de alterar o destino do fomulário antes de submeter os dados preenchidos.*@
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary acao-secundaria">Secundário</button>
+
+                            @*O botão abaixo tem a ação principal deste formulário. Ele é responsável pela submissão do mesmo.*@
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Principal</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+
+        <div id="table-spinner" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner centralized-spinner"></div>
+
+
+        <!-- CARD TABELA -->
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <td class="mdl-cell--hide-tablet mdl-cell--hide-phone sequential-column">#</td>
+                    <th class="mdl-data-table__cell--non-numeric">Código do cliente</th>
+                    <th class="mdl-data-table__cell--non-numeric">Código da Conta</th>
+                    <th class="mdl-data-table__cell--non-numeric">Data de Criação</th>
+                    <th class="mdl-cell--hide-tablet mdl-cell--hide-phone">Descricao</th>
+                    <th class="mdl-data-table__cell--non-numeric mdl-cell--hide-tablet mdl-cell--hide-phone centered-content">Analítica</th>
+                    <th class="mdl-data-table__cell--non-numeric centered-content">Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                @for (int j = 0; j < Model.lista.Count; j++)
+                {
+                    String idVisualizacao = "visualizar-" + j;
+                    String idEdicao = "editar-" + j;
+                    String idAdicao = "adicionar-" + j;
+                    String idExclusao = "excluir-" + j;
+                    int idColunaNumeracao = j + 1;
+                    PlanoDeContas obj = Model.lista[j];
+
+                    <tr>
+                        <td class="mdl-cell--hide-tablet mdl-cell--hide-phone">@idColunaNumeracao</td>
+                        <td class="mdl-data-table__cell--non-numeric">@obj.CodCli</td>
+                        <td class="mdl-data-table__cell--non-numeric">@obj.CodContas</td>
+                        <td class="mdl-data-table__cell--non-numeric">@obj.DataCriacao.ToString("dd/MM/yyyy")</td>
+                        <td class="mdl-cell--hide-tablet mdl-cell--hide-phone">@obj.Descricao</td>
+                        <td class="mdl-data-table__cell--non-numeric mdl-cell--hide-tablet mdl-cell--hide-phone centered-content">
+                            @if (obj.Analitica)
+                            {
+                                <i class="fa fa-check table-true-icon"></i>
+                            }
+                            else
+                            {
+                                <i class="fa fa-times table-false-icon"></i>
+                            }
+                        </td>
+                        <td class="mdl-data-table__cell--non-numeric centered-content">
+
+                            <!-- LINK DE VISUALIZAÇÃO -->
+                            <a href="#">
+                                @{
+                                    //A cada iteração, monta a estrutura para visualização dos detalhes em uma caixa de diálogo.
+                                    String detailContent = "Cliente número: " + @Model.lista[@j].CodCli + "<br>" +
+                                                           "Conta número: " + @Model.lista[@j].CodContas + "<br>" +
+                                                           @Model.lista[@j].Descricao + "<br>" +
+                                                           "Data criação: " + Model.lista[@j].DataCriacao.ToString("dd/MM/yyyy");
+                                }
+                                @*
+                                    "buildDialog()" está implementada em "Web/Scrips/Material/MaterialDialogBuiler.js.
+                                    Esta função configura a caixa de diálogo com um título e um conteúdo, além de N botões de ação, sendo um deles o primário."
+                                    As ações passadas como parâmetros devem ser funções implementadas em um arquivo JavaScript. Neste caso, em "Web/Scripts/DynamicActions/PlanoContasListagemEvents.js".
+                                *@
+                                <i class="fa fa-eye action-table-icon action-icon-visualizar" id="@idVisualizacao" onclick="buildDialog('Detalhes', '@detailContent', ['OK'], ['visualized()'])"></i>
+                                <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idVisualizacao">
+                                    Visualizar
+                                </div>
+                            </a>
+
+                            <!-- LINK DE EDIÇÃO -->
+                            <a href="#">
+                                <i class="fa fa-pencil action-table-icon action-icon-editar" id="@idEdicao"></i>
+                                <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idEdicao">
+                                    Editar
+                                </div>
+                            </a>
+
+                            <!-- LINK DE ADIÇÃO -->
+                            <a href="#">
+                                <i class="fa fa-plus action-table-icon action-icon-editar" id="@idAdicao"></i>
+                                <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idAdicao">
+                                    Adicionar (NÃO SE APLICA)
+                                </div>
+                            </a>
+
+                            <!-- LINK DE EXCLUSÃO -->
+                            <a href="#">
+                                @{
+                                    String exclusionConfirmationText = "Tem certeza que deseja excluir o item <b>" + @Model.lista[@j].Descricao + "</b>?";
+                                }
+                                <i class="fa fa-trash action-table-icon action-icon-editar" id="@idExclusao" onclick="buildDialog('Confirmação', '@exclusionConfirmationText', ['Confirmar', 'Cancelar'], ['confirm(@Model.lista[@j].CodCli, @Model.lista[@j].CodContas)', 'cancel()'])"></i>
+                                <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idExclusao">
+                                    Excluir
+                                </div>
+                            </a>
+
+                        </td>
+                    </tr>
+                                    }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+
+<!--  SESSÃO DE SCRIPT (NÃO OBRIGATÓRIA) A SER EXECUTADA APÓS O CARREGAMENTO DESTA VIEW -->
+@section AfterScript {
+    <script type="text/javascript">
+        //necessário para o funcionamento do input do tipo slider (não está senrdo utilizado nesta página)
+        $("#slider-value").html($("#slider1").val());
+        function updateSliderValue(value) {
+            $("#slider-value").html(value);
+            posicionarTooltip(value);
+        }
+        function posicionarTooltip(value) {
+            $("#slider-value").css("margin-left", "12.3%");
+        }
+
+        //troca do destino do formulário para ação secundária
+        $(".acao-secundaria").click(function () {
+            $("#form-principal").attr("action", '@Url.Action("AcaoSecundaria")');
+        });
+
+        //exclusão de itens da lista
+        function confirm(cli, con) {
+            $("table").before("<p class='mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active'></p>").hide("fade", 500);
+            $("#table-spinner").addClass("is-active").show("fade", 500);
+            toggleAllButtons();
+            
+            $.ajax({
+                url: '@Url.Action("Excluir")?codCli=' + cli + "&codConta=" + con,
+                type: 'POST',
+                success: function () {
+                    window.location.reload(true);
+                }
+            });
+        }
+    </script>
+}
+
+<script type="text/javascript" src="~/Scripts/DynamicActions/PlanoContasListagemEvents.js"></script>
+
+@section AfterStyle {
+    <style type="text/css">
+    </style>
+}

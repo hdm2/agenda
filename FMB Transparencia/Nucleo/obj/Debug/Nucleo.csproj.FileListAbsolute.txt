@@ -1,0 +1,19 @@
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Nucleo\bin\Debug\Amon.Nucleo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Nucleo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Nucleo\obj\Debug\Nucleo.csprojResolveAssemblyReference.cache
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Nucleo\obj\Debug\Amon.Nucleo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Nucleo\obj\Debug\Amon.Nucleo.pdb
+E:\Atualizacao\Nucleo\bin\Debug\Amon.Nucleo.dll
+E:\Atualizacao\Nucleo\bin\Debug\Amon.Nucleo.pdb
+E:\Atualizacao\Nucleo\obj\Debug\Nucleo.csprojResolveAssemblyReference.cache
+E:\Atualizacao\Nucleo\obj\Debug\Amon.Nucleo.dll
+E:\Atualizacao\Nucleo\obj\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Nucleo\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Nucleo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Nucleo\obj\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Nucleo\obj\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Nucleo\obj\Debug\Nucleo.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\obj\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\obj\Debug\Amon.Nucleo.pdb

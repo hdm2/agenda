@@ -1,0 +1,65 @@
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Servico.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Servico.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.Nucleo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.Persistencia.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Persistencia.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.Nucleo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.Persistencia.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\bin\Debug\Amon.PontoE.Persistencia.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\obj\Debug\Amon.PontoE.Servico.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Servico\obj\Debug\Amon.PontoE.Servico.pdb
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Servico.dll
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Servico.pdb
+E:\Atualizacao\Servico\bin\Debug\Amon.Nucleo.dll
+E:\Atualizacao\Servico\bin\Debug\Amon.Persistencia.dll
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Modelo.dll
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Persistencia.dll
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Modelo.pdb
+E:\Atualizacao\Servico\bin\Debug\Amon.Nucleo.pdb
+E:\Atualizacao\Servico\bin\Debug\Amon.Persistencia.pdb
+E:\Atualizacao\Servico\bin\Debug\Amon.PontoE.Persistencia.pdb
+E:\Atualizacao\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+E:\Atualizacao\Servico\obj\Debug\Amon.PontoE.Servico.dll
+E:\Atualizacao\Servico\obj\Debug\Amon.PontoE.Servico.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Servico.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Servico.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\bin\Debug\Amon.PontoE.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\obj\Debug\Amon.PontoE.Servico.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Servico\obj\Debug\Amon.PontoE.Servico.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Servico.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Servico.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.DAO.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\bin\Debug\Amon.DAO.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\obj\Debug\Amon.Servico.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Servico\obj\Debug\Amon.Servico.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Servico.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Servico.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.DAO.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Nucleo.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Persistencia.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Nucleo.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.Persistencia.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\bin\Debug\Amon.DAO.pdb
+C:\Users\humbe\git\FMB Transparencia\Servico\obj\Debug\Servico.csprojResolveAssemblyReference.cache
+C:\Users\humbe\git\FMB Transparencia\Servico\obj\Debug\Amon.Servico.dll
+C:\Users\humbe\git\FMB Transparencia\Servico\obj\Debug\Amon.Servico.pdb

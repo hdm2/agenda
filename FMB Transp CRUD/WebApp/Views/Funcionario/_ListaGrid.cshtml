@@ -1,0 +1,46 @@
+﻿@using PagedList;
+@using Amon.PontoE.Modelo.Cadastro
+@model IPagedList<Funcionario>
+<div class="padding-10 dt-wrapper" role="grid">
+    <table class="table table-striped table-bordered table-hover dataTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Pis</th>
+                <th>MatriculaRH</th>
+                <th>LoginAD</th>
+                <th>IdCargo</th>
+                <th>IdLotacao</th>
+                <th>Admissao</th>
+                <th>Nascimento</th>
+                <th>IdJornada</th>
+                <th class="actCol">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var e in Model)
+            {
+                <tr>
+                    <td>@e.Id</td>
+                    <td>@e.Nome</td>
+                    <td>@e.Cpf</td>
+                    <td>@e.Pis</td>
+                    <td>@e.MatriculaRH</td>
+                    <td>@e.LoginAD</td>
+                    <td>@e.IdCargo</td>
+                    <td>@e.IdLotacao</td>
+                    <th>@e.Admissao</th>
+                    <td>@e.Nascimento</td>
+                    <td>@e.IdJornada</td>
+                    <td class="actCol">
+                        <a class="text-success" href="@Url.Action("Manutencao")/@e.Id" title="Editar" rel="tooltip" data-placement="top" data-original-title="Editar"><i class="fa fa-pencil fa-lg"></i></a>&nbsp;&nbsp;
+                        <a class="text-danger btn-apagar" href="@Url.Action("Excluir")/@e.Id/@Url.RequestContext.HttpContext.Request["pagina"]" title="Excluir" rel="tooltip" data-placement="top" data-original-title="Excluir"><i class="fa fa-trash-o fa-lg"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@Html.Partial("_Paginador", Model)

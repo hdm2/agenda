@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Data Binding with KnockoutJS</title>
+</head>
+<body>
+<form data-bind="submit: validateAndSave, with: person">
+<input type="text" data-bind="value: firstName"         placeholder="Enter your first name" required /><br/>
+<input type="text" data-bind="value: lastName"         placeholder="Enter your last name" required /><br/>
+<input type="email" data-bind="value: email"         placeholder="Enter your email" required /><br/>
+<input type="submit" />
+</form> 
+<script type='text/javascript' src='js/jquery.js'></script>
+<script type='text/javascript' src='js/jquery.validate.min.js'></script>
+<script type='text/javascript' src='js/knockout-3.2.0.js'></script>
+<script>
+function ViewModel() {
+	var self = this; 
+            self.person = {
+            		firstName: ko.observable(),
+            		lastName: ko.observable(),
+            		email: ko.observable()             }; 
+            self.validateAndSave = function(form) {
+            	if (!$(form).validate()) return; 
+                $.ajax({
+                	url: 'myform.aspx',
+                	data: ko.toJS(self.person),
+                	type: 'POST',
+                	contentType: 'application/x-www-form-urlencoded'
+                	}).success(self.successSave).error(self.errorSave);
+                }; 
+            self.successSave = function() {
+            	alert('Success!');
+            	}; 
+            self.errorSave = function() {
+            	alert('Error!');
+            	};
+            	}; 
+        var viewModel = new ViewModel(); 
+        ko.applyBindings(viewModel);
+        </script>
+</body>
+</html> 

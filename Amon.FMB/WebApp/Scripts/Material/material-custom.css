@@ -1,0 +1,84 @@
+/* LAYOUT */
+.mdl-layout__header,
+.mdl-layout__header-row, 
+.mdl-mega-footer, 
+.mdl-mini-footer, 
+.mdl-layout__drawer > .mdl-layout-title {
+	background-color: #4caf50;
+}
+.mdl-mini-footer{
+    height: 0px;
+}
+.mdl-layout__drawer.is-visible {
+	width: 320px;
+}
+.mdl-layout__drawer > .mdl-layout-title {
+    font-weight: 300;
+}
+.mdl-layout__header-row .mdl-navigation__link,
+.mdl-mini-footer__link-list,
+.mdl-layout__header .mdl-layout__drawer-button,
+.mdl-layout__drawer > .mdl-layout-title {
+    color: white;
+}
+.mdl-mini-footer__link-list {
+    margin-top:-15px;
+}
+
+
+/* COMPONENTES */
+/* cards */
+.mdl-card {
+	width:100%;
+	padding:25px;
+    margin-top:20px;
+}
+.mdl-data-table{
+    margin-top:20px;
+}
+.mdl-card__actions {
+    text-align: right;
+}
+
+/* buttons */
+.mdl-button {
+    text-transform: capitalize;
+}
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, 
+.mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    background-color: #006a2c;
+    color:white;
+    font-weight: 300;
+}
+.mdl-button--primary.mdl-button--primary.mdl-button--raised {
+    background-color: #eee;
+}
+
+/* tables */
+.mdl-data-table {
+    width: 100%;
+}
+.mdl-data-table .centered-content {
+    text-align:center;
+}
+.mdl-data-table > thead tr > th {
+    font-weight: bold;
+}
+
+/* inputs */
+.mdl-textfield,
+.mdl-select {
+    width: calc(100% - 30px);
+}
+label.mdl-checkbox {
+    margin-top: 20px;
+}
+
+/* diálogos */
+.mdl-dialog {
+    box-shadow: 0 9px 46px 8px rgba(0,0,0,.14),0 11px 15px -7px rgba(0,0,0,.12),0 2px 2px 2px rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+.mdl-dialog > .mdl-dialog__title {
+    font-size: 16px;
+}

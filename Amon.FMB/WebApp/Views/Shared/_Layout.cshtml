@@ -1,0 +1,253 @@
+﻿@using Amon.PontoE.Modelo.Seguranca
+@using Amon.PontoE.WebApp.Models
+@{
+    ErroModel erroModel = TempData[ErroModel.ErroTag] as ErroModel;
+}
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=9">
+    <title>@ViewBag.Title</title>
+    <meta name="description" content="overview &amp; stats" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="copyright" content="Desenvolvido por AMON Consultoria em T.I.">
+    
+    @{
+        BundleTable.EnableOptimizations = false;
+        Usuario u = Session["usuario"] as Usuario ?? new Usuario();
+    }
+
+   <!--[if lt IE 9]>
+        <script src="@BundleTable.Bundles.ResolveBundleUrl("~/js/ie")"></script>
+    <![endif]-->
+    
+    @Styles.Render("~/cssbasic")
+  
+    <!--[if IE 7]>
+        <link href="@BundleTable.Bundles.ResolveBundleUrl("~/cssie")" rel="stylesheet" />
+    <![endif]-->
+
+    <script>
+        $('nav > ul > li ').removeClass('active');
+    </script>
+
+</head>
+<body class="smart-style-2">
+    <header id="header">
+
+        <!-- Parte Esquerda da Nav/ Grupo da Logo -->
+        <div id="logo-group">
+            <img src="~/Content/img/logos/logo.jpg" alt="Banpara" />
+        </div>
+
+        <!-- Parte Direita da Nav/ Grupo dos botões -->
+        <div class="pull-right">
+
+            <!-- Botão do menu Fechado -->
+            <div id="hide-menu" class="btn-header pull-right">
+                <span><a href="javascript:void(0);" rel="tooltip" data-placement="bottom" data-original-title="Menu"><i class="fa fa-reorder"></i></a></span>
+            </div>
+
+            <div id="logout" class="btn-header transparent pull-right">
+                <span><a href="@Url.Action("LogOff", "Autenticacao")" rel="tooltip" data-placement="bottom" data-original-title="Sair"><i class="fa fa-sign-out"></i></a></span>
+            </div>
+
+            <!--div class="btn-header transparent pull-right">
+                <span><a href="#" rel="tooltip" data-placement="bottom" data-original-title="Bloquear Sistema"><i class="fa fa-lock"></i></a></span>
+            </div-->
+
+        </div>
+        <!-- end pulled right: nav area -->
+
+    </header>
+    <!-- END HEADER -->
+
+    <!-- Painel Esquerdo : Area de Navegação -->
+    <!-- Note: O tamanho da área desse menu lateral é ajustada no less -->
+    <aside id="left-panel">
+
+        <!-- Info de Usuário -->
+        <div class="login-info">
+            <span>
+                <a href="javascript:void(0);" id="show-shortcut">
+                    <img src="~/Content/img/avatars/male.png" alt="me" class="online" />
+                    <span>@u.Nome</span>
+                </a>
+            </span>
+        </div>
+        <!-- end Info de Usuário -->
+
+        <!-- NAVIGATION : Parte da navegação (Links) -->
+        <nav>
+            <ul>
+                <li>
+                    <a href='@Url.Action("Index","Home")' title="Meu Painel"><i class="fa fa-lg fa-fw fa-home"></i><span class="menu-item-parent">Meu Painel</span></a>
+                </li>
+                @foreach (var a in u.Permissoes)
+                {
+                    <li @(Request.RequestContext.RouteData.Values["controller"].ToString()==a.Controller ? "class=active" : "") >
+                        <a href='@Url.Action(a.Acao, a.Controller)' title="@a.Nome"><i class="@a.Icone"></i><span class="menu-item-parent">@a.Comentario</span></a>
+                    </li>
+                }
+                <li>
+                    <a href="@Url.Action("AlterarSenha", "Autenticacao")"><i class="fa fa-lg fa-fw fa-key"></i><span class="menu-item-parent">Trocar Senha</span></a>
+                </li>
+            </ul>
+        </nav>
+        <span class="minifyme"><i class="fa fa-arrow-circle-left hit"></i></span>
+    </aside>
+    <!-- END NAVIGATION -->
+
+    <!-- MAIN PANEL -->
+    <div id="main" role="main">
+
+        <!-- RIBBON -->
+        <div id="ribbon">
+
+            <!-- breadcrumb -->
+            <ol class="breadcrumb">
+                @RenderSection("Caminho", false)
+            </ol>
+            <!-- end breadcrumb -->
+
+        </div>
+        <!-- END RIBBON -->
+
+        <!-- MAIN CONTENT -->
+        <div id="content">
+            @if (erroModel != null)
+            {
+                <div class="alert alert-block alert-danger">
+                    <a class="close" data-dismiss="alert" href="#">×</a>
+                    <h4 class="alert-heading"><i class="fa fa-bug"></i> @Html.Raw(erroModel.Titulo)</h4>
+                    <p>
+                        @Html.Raw(erroModel.Mensagem)
+                    </p>
+                </div>
+            }
+            @RenderBody()
+            @RenderSection("paginacao", false)
+        </div>
+        <!-- END MAIN CONTENT -->
+
+    </div>
+    <!-- END MAIN PANEL -->
+
+
+<!-- Rodape -->
+    <footer id="footer">
+
+        <nav class="container">
+            
+            <!-- Copyright e versão -->
+            <div class="pull-right">
+                <div class="btn-header transparent pull-right" style="margin: 15px 5px 0 0;color:white;">
+                    <span><span style="color:#DA251C;font-weight: bold">Banpara </span><i class="glyphicon glyphicon-copyright-mark"></i>&nbsp;Todos os direitos reservados (v1.5.4)</span>
+                </div>
+            </div>
+
+        </nav>
+    </footer>
+    <!-- END Rodape -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.js"></script>
+   
+    @Scripts.Render("~/js/basico")
+
+    @if (IsSectionDefined("paginacao"))
+    {
+        <script type="text/javascript">
+            var preparaExclusao = function() {
+                $(".btn-apagar").click(function(event) {
+                    event.preventDefault();
+                    var $this = this;
+
+                    $.SmartMessageBox({
+                        title: "Exclusão!",
+                            content: "Deseja excluir o registro selecionado?",
+                            buttons: '[Não][Sim]'
+                        }, function(buttonPressed) {
+                            if (buttonPressed === "Sim") {
+                                console.log(buttonPressed);
+
+                                $.post($this.href, function(data) {
+                                    console.log(data);
+                                    if (data == "OK") {
+                                        $.smallBox({
+                                            title: "INFO!",
+                                            content: "<i>Registro excluído com sucesso.</i>",
+                                            color: "#659265",
+                                            iconSmall: "fa fa-check fa-2x fadeInRight animated",
+                                            timeout: 4000
+                                        });
+
+                                        //var ar = $this.href.split("/");
+                                        //var p = ar[ar.length - 1];
+                                        //obterLinhas(p);
+                                        window.location.reload(true);
+                                        return;
+                                    }
+
+                                    $.smallBox({
+                                        title: "ERRO!",
+                                        content: "<i>Falha ao tentar excluir registro.</i><br/>" + data,
+                                        color: "#C46A69",
+                                        iconSmall: "fa fa-times fa-2x fadeInRight animated",
+                                        timeout: 4000
+                                    });
+                                });
+                            }
+                            else {
+                                window.location.reload(true);
+                            }
+                        });
+                });
+            };
+            
+            @*var obterLinhas = function (pag) {
+                $.ajax({
+                    url: '@Url.Action("obterPagina")?pagina=' + pag,
+                    type: 'POST',
+                    success: function(data) {
+                        $("#linhas").empty().append(data);
+                        preparaExclusao();
+                    }
+                });
+            };*@
+
+            function PagedOnComplete(obj) {
+                var $oncomplete = $('#oncomplete');
+                preparaExclusao();
+            }
+            
+            $(document).ready(preparaExclusao());
+        </script>
+    }
+    
+    @RenderSection("scripts", required: false)
+    @Scripts.Render("~/js/adicional")
+    <script type="text/javascript">
+        // Não remover. Setup do template bootstrap
+        $(document).ready(function () {
+            pageSetUp();
+            $("nav > ul > li.active").removeClass("active");
+        });
+    </script>
+
+    @RenderSection("posscripts", required: false)
+
+    <!--[if IE 7]>
+        <script type="text/javascript">
+        $(document).ready(function () {
+            $(".row > .col ").each(function() {
+                var i = parseInt($(this).css("width").replace("px", "")) - 100;
+                $(this).css("width", i + "px");
+            });
+        });
+    </script>
+    <![endif]-->
+</body>
+</html>

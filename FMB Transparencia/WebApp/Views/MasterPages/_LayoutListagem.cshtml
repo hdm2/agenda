@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=9" />
+    <meta name="description" content="overview &amp; stats" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="copyright" content="Desenvolvido por AMON Consultoria em T.I." />
+
+    <!-- IMPORTAÇÃO DE RECURSOS -->
+    <!-- jquery -->
+    <script src="~/Scripts/Material/jquery-3.1.0.min.js"></script>
+    <script src="~/Scripts/Material/jquery-ui.min.js"></script>
+    <!-- material design lite -->
+    <script defer src="~/Scripts/Material/material.js"></script>
+    <link rel="stylesheet" href="~/Scripts/Material/material.css" />
+    <link rel="stylesheet" href="~/Scripts/Material/material.green-white.min.css" />
+    <link rel="stylesheet" href="~/Scripts/Material/material-icons.css" />
+    <!-- extensão material design lite -->
+    <link rel="stylesheet" href="~/Scripts/Material/material-extension-dropdownlist.css" />
+    <script defer src="~/Scripts/Material/material-extension-dropdownlist.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="~/Scripts/Material/font-awesome-4.6.3/css/font-awesome.min.css" />
+    <!-- validação -->
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+    <!-- customizado -->
+    <link rel="stylesheet" href="~/Scripts/Material/material-custom.css" />
+    <link rel="stylesheet" href="~/Scripts/Material/custom.css" />
+    <script src="~/Scripts/Material/custom.js"></script>
+    <script src="~/Scripts/Material/MaterialDialogBuilder.js"></script>
+
+    @{
+        var nomeSistema = "FMB Transparência";
+
+        //var erroMsg = TempData["ErroMsg"];
+        //var sucessoMsg = TempData["SucessoMsg"];
+        //var infoMsg = TempData["InfoMsg"];
+    }
+
+    <title>@nomeSistema</title>
+</head>
+
+<body style="display:none">
+
+    @*CAIXAS DE DIÁLOGO*@
+    <dialog class="mdl-dialog" id="default-dialog">
+        <h5 class="mdl-dialog__title"></h5>
+        <div class="mdl-dialog__content">
+            <p>
+            </p>
+        </div>
+        <div class="mdl-dialog__actions">
+        </div>
+    </dialog>
+
+    @if (!TempData.Any())
+    {
+        //Codificar caixas de diálogo com aspecto de notificação, recuadas à direita.
+        //Usar calc(% + px) para o recuo.
+        <div class="notification-box">
+            <div class="mdl-grid">
+
+                <div class="mdl-cell mdl-cell--1-col">
+                    <i class="fa fa-info-circle fa-3x"></i>
+                </div>
+                <div class="mdl-cell mdl-cell--10-col">
+                    Texto da notificação...........
+                </div>
+                <div class="mdl-cell mdl-cell--1-col" style="text-align:right">
+                    <a onclick="$('.notification-box').hide('fade', 600)" class="close-icon">
+                        <i class="fa fa-close"></i>
+                       
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            <script type="text/javascript">
+                $(".notification-box").animate({
+                    opacity: 0.9,
+                    top: "+=40",
+                    height: "toggle"
+                }, 1000, function () {
+                    //...
+                });
+            </script>
+    }
+
+    @*CABEÇALHO*@
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <header class="mdl-layout__header ">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    <img src="~/Content/img/fmb.png" class="logo-header" />
+                </span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="">
+                        <i class="fa fa-user"></i>
+                        Autenticar
+                    </a>
+
+                    <a class="mdl-navigation__link mdl-cell--hide-tablet mdl-cell--hide-phone" href="#">
+                        <i class="fa fa-question-circle-o"></i>
+                        Ajuda
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        @*MENU LATERAL*@
+        <div class="mdl-layout__drawer">
+            @*<span class="mdl-layout-title">
+                    <img src="~/Content/img/fmb.png" class="logo-header" />
+                </span>*@
+
+            <nav class="mdl-navigation">
+                <a href="#form1" class="menu-link mdl-navigation__link"><i class="fa fa-plus-square-o"></i> Opção 1</a>
+                <a href="#form2" class="menu-link mdl-navigation__link"><i class="fa fa-pencil-square-o"></i> Opção 2</a>
+
+                <span class="mdl-navigation__link mdl-cell--hide-tablet mdl-cell--hide-desktop">
+                    <i class="fa fa-arrow-left"></i>
+                </span>
+            </nav>
+        </div>
+
+        @*CONTEUDO PRINCIPAL*@
+        <main class="mdl-layout__content">
+
+            @RenderBody()
+
+        </main>
+
+        @*RODAPÉ*@
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <li>&copy; Todos os direitos reservados</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    @RenderSection("AfterStyle", required: false)
+
+    <!-- SCRIPT DA CAIXA DE DIÁLOGO -->
+    <script type="text/javascript">
+        var dialog = document.querySelector('dialog');
+
+        if (!dialog.showModal) {
+            dialogPolyfill.registerDialog(dialog);
+        }
+    </script>
+
+    @RenderSection("AfterScript", required: false)
+
+
+    @*ANIMAÇÃO DE ABERTURA DAS TELAS QUE USEM ESTA MASTER PAGE*@
+    <script type="text/javascript">
+        $("body").show("fade", 600);
+    </script>
+
+</body>
+
+
+
+</html>

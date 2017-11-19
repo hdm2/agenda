@@ -1,0 +1,11 @@
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.DAO.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.DAO.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\obj\Debug\Amon.DAO.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\PontoE.Persistencia\obj\Debug\Amon.DAO.pdb

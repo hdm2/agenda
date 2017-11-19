@@ -1,0 +1,14 @@
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\amonpeletro.code\Amon.PontoE\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\Amon.FMB\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\Amon.FMB\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\Amon.FMB\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\humbe\git\Amon.FMB\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\humbe\git\Amon.FMB\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\humbe\git\Amon.FMB\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\Amon.FMB\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb

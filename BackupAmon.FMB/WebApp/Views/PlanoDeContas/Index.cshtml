@@ -1,0 +1,333 @@
+﻿@using Amon.Modelo.Entidades
+@using Amon.Web.Utils;
+
+@model Amon.Web.Models.ModelTelaListagem
+
+@{
+    Layout = "~/Views/MasterPages/_LayoutPadrao.cshtml";
+}
+
+<div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+        <!-- CARD FORM FILTRO -->
+        <div class="mdl-card mdl-shadow--2dp">
+
+            @using (Html.BeginForm("ResultadoPesquisa", "PlanoDeContas", FormMethod.Post, new { Id = "form-principal" }))
+            {
+                @*A chamada abaixo é responsável pela exibição das mensagens de validação do formulário.*@
+                //@Html.ValidationSummary()
+
+                <div class="mdl-grid">
+
+                    <div class="mdl-cell--12-col form-title">
+                        <!-- LARGE LABEL -->
+                        Consulta Planos de Contas
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.CodCli, new { @class = "mdl-textfield__input", Value = "", pattern = REGEX.numerico })
+                            @Html.Label("Código cliente", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.CodContas, new { @class = "mdl-textfield__input", Value = "", pattern = REGEX.numerico })
+                            @Html.Label("Código conta", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.ContaReduz, new { @class = "mdl-textfield__input", Value = "", maxlength = "10", pattern = REGEX.numerico })
+                            @Html.Label("Código da conta reduzido", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.DataCriacao, new { @class = "mdl-textfield__input", Value = "", maxlength = "10", pattern = REGEX.data })
+                            @Html.Label("Data de criação", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.DataExclusao, new { @class = "mdl-textfield__input", Value = "", maxlength = "10", pattern = REGEX.data })
+                            @Html.Label("Data de exclusão", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+                    <div class="mdl-cell--4-col">
+                        <!-- EDIT TEXT -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            @Html.TextBoxFor(Model => Model.obj.Descricao, new { @class = "mdl-textfield__input", Value = "", maxlength = "80", pattern = REGEX.alfanumericoComEspacos })
+                            @Html.Label("Descrição", new { @class = "mdl-textfield__label" })
+                        </div>
+                    </div>
+
+
+
+
+                    <span id="Outros tipos de input">
+                        @*<div class="mdl-cell--4-col">
+                                <!-- TOGGLE BUTTON -->
+                                <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+                                    @Html.CheckBoxFor(Model => Model.obj.Analitica, new { @class = "mdl-switch__input", @checked = "@Model.obj.Analitica" })
+                                    <span class="mdl-switch__label">Analítica</span>
+                                </label>
+                            </div>*@
+
+
+                        @*<div class="mdl-cell--4-col">
+                                <!-- CHECKBOX -->
+                                <label for="cb1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+                                    @Html.CheckBoxFor(Model => Model.obj.Analitica, new { @class = "mdl-checkbox__input", Id = "cb1", @checked = "@Model.obj.Analitica" })
+                                    <span class="mdl-checkbox__label">Analítica</span>
+                                </label>
+                            </div>*@
+
+
+                        @*<div class="mdl-cell--4-col">
+                                <!-- SELECT LIST -->
+                                <div class="mdl-select mdl-js-select mdl-select--floating-label">
+                                    @Html.DropDownListFor(Model => Model.obj.ContaReduz, new SelectList(ViewBag.ItensDropDown, "Value", "Name"), String.Empty, new { @class = "mdl-select__input" })
+                                    @Html.Label("Redução", new { @class = "mdl-select__label" })
+                                </div>
+                            </div>*@
+
+                        @*<div class="mdl-cell--4-col">
+                                    <label>Range</label>
+                                    <input id="slider1" class="mdl-slider mdl-js-slider" type="range" min="0" max="10" value="5" step="1" oninput="updateSliderValue(this.value)" onchange="updateSliderValue(this.value)">
+                                    <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="slider1" id="slider-value" style="margin-left: 12.3%">
+                                    </div>
+                            </div>*@
+
+
+                        @*<div class="mdl-cell--4-col">
+                            </div>*@
+
+
+                        @*<div class="mdl-cell--6-col">
+                                <!-- TEXT AREA -->
+                                <div class="mdl-textfield mdl-js-textfield">
+                                    @Html.TextAreaFor(Model => Model.obj.CampoAlfa, new { @class = "mdl-textfield__input", rows = "3", id = "ta1" })
+                                    <label class="mdl-textfield__label" for="ta1">Texto longo...</label>
+                                </div>
+                            </div>*@
+
+
+                        @*<div class="mdl-cell--4-col">
+                            </div>*@
+
+
+                        <!-- FAB BUTTONS -->
+                        @*<div class="mdl-cell--1-col">
+                                <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab mdl-button--accent">
+                                    <i class="material-icons">add</i>
+                                </a>
+                            </div>
+                            <div class="mdl-cell--1-col">
+                                <a class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--mini-fab">
+                                    <i class="material-icons">add</i>
+                                </a>
+                            </div>*@
+                    </span>
+
+
+                    <div class="mdl-cell--12-col">
+                        <!-- ACTION BUTTONS -->
+                        <div class="mdl-card__actions">
+
+                            @*O link abaixo será usado apenas para redirecionamentos entre páginas. Neste caso, ele encaminha a navegação para esta mesma página.*@
+                            @*<a href='@Url.Action("LinkSimples")' class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect simple-link">Link simples</a>*@
+
+                            @*O botão abaixo é identificado como secundário por meio da classe "acao-secundaria".
+                                Com isso, ele é capaz de alterar o destino do fomulário antes de submeter os dados preenchidos.*@
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--primary secondary-action">Listar todos</button>
+
+                            @*O botão abaixo tem a ação principal deste formulário. Ele é responsável pela submissão do mesmo.*@
+                            <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent primary-action" formnovalidate>Pesquisar</button>
+
+                        </div>
+                    </div>
+
+                </div>
+            }
+
+        </div>
+
+
+        <div id="table-spinner" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner centralized-spinner"></div>
+
+        <!-- CARD TABELA -->
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp inicializa-oculto" id="filtered-table">
+            <thead>
+                <tr>
+                    @*<th class="mdl-cell--hide-tablet mdl-cell--hide-phone sequential-column">#</th>*@
+                    <th class="mdl-data-table__cell--non-numeric">Código do cliente</th>
+                    <th class="mdl-data-table__cell--non-numeric">Código da conta</th>
+                    <th class="mdl-data-table__cell--non-numeric">Data de Criação</th>
+                    <th class="mdl-cell--hide-tablet mdl-cell--hide-phone">Descricao</th>
+                    <th class="mdl-data-table__cell--non-numeric mdl-cell--hide-tablet mdl-cell--hide-phone centered-content">Analítica</th>
+                    <th class="mdl-data-table__cell--non-numeric centered-content">Ações</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for (int j = 0; j < Model.lista.Count; j++)
+                {
+                    String idVisualizacao = "visualizar-" + j;
+                    String idEdicao = "editar-" + j;
+                    String idAdicao = "adicionar-" + j;
+                    String idExclusao = "excluir-" + j;
+                    //int idColunaNumeracao = j + 1;
+                    PlanoDeContas obj = Model.lista[j];
+
+                    <tr id="linha-@j">
+                            @*<td class="mdl-cell--hide-tablet mdl-cell--hide-phone">@idColunaNumeracao</td>*@
+                            <td class="mdl-data-table__cell--non-numeric"><div>@obj.CodCli</div></td>
+                            <td class="mdl-data-table__cell--non-numeric"><div>@obj.CodContas</div></td>
+                            <td class="mdl-data-table__cell--non-numeric"><div>@obj.DataCriacao.Value.ToString("dd/MM/yyyy")</div></td>
+                            <td class="mdl-cell--hide-tablet mdl-cell--hide-phone"><div>@obj.Descricao</div></td>
+                            <td class="mdl-data-table__cell--non-numeric mdl-cell--hide-tablet mdl-cell--hide-phone centered-content">
+                                <div>
+                                    @if (obj.Analitica)
+                                    {
+                                        <i class="fa fa-check table-true-icon"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-times table-false-icon"></i>
+                                    }
+                                </div>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric centered-content">
+                                <div>
+                                    <!-- LINK DE VISUALIZAÇÃO -->
+                                    <a href="#" id="link-visualizar-@j">
+                                        @{
+                                            //A cada iteração, monta a estrutura para visualização dos detalhes em uma caixa de diálogo.
+                                            String detailContent = "Cliente número: " + @Model.lista[@j].CodCli + "<br>" +
+                                                                   "Conta número: " + @Model.lista[@j].CodContas + "<br>" +
+                                                                   @Model.lista[@j].Descricao + "<br>" +
+                                                                   "Data criação: " + Model.lista[@j].DataCriacao.Value.ToString("dd/MM/yyyy");
+                                        }
+                                        @*
+                                            "buildDialog()" está implementada em "Web/Scrips/Material/MaterialDialogBuiler.js.
+                                            Esta função configura a caixa de diálogo com um título e um conteúdo, além de N botões de ação, sendo um deles o primário."
+                                            As ações passadas como parâmetros devem ser funções implementadas em um arquivo JavaScript. Neste caso, em "Web/Scripts/DynamicActions/PlanoContasListagemEvents.js".
+                                        *@
+                                        <i class="fa fa-eye action-table-icon" id="@idVisualizacao" onclick="buildDialog('Detalhes', '@detailContent', ['OK'], ['visualized()'])"></i>
+                                        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idVisualizacao">
+                                            Visualizar
+                                        </div>
+                                    </a>
+
+                                    <!-- LINK DE EDIÇÃO -->
+                                    <a href="#">
+                                        <i class="fa fa-pencil action-table-icon" id="@idEdicao" onclick="preparaFormEdicao_Invoke('@Model.lista[@j].CodCli', '@Model.lista[@j].CodContas')"></i>
+                                        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idEdicao">
+                                            Editar
+                                        </div>
+                                    </a>
+
+                                    <!-- LINK DE ADIÇÃO -->
+                                    @*<a href="#" id="link-adicionar-@j" onclick="ocultar(@j)">
+                                        <i class="fa fa-plus action-table-icon" id="@idAdicao"></i>
+                                        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idAdicao">
+                                            Adicionar (NÃO SE APLICA)
+                                        </div>
+                                    </a>*@
+
+                                    <!-- LINK DE EXCLUSÃO -->
+                                    <a href="#" id="link-excluir-@j">
+                                        @{
+                                            String exclusionConfirmationText = "Tem certeza que deseja excluir o item <b>" + @Model.lista[@j].Descricao + "</b>?";
+                                            String urlExclusao = '"' + @Url.Action("Excluir") + "?cli=" + @Model.lista[@j].CodCli + "&con=" + @Model.lista[@j].CodContas + '"';
+                                            String idLinha = '"' + "linha-" + @j + '"';
+                                        }
+                                        <i class="fa fa-trash action-table-icon" id="@idExclusao" onclick="buildDialog('Confirmação', '@exclusionConfirmationText', ['Excluir', 'Cancelar'], ['confirm(@urlExclusao, @idLinha)', 'cancel()'])"></i>
+                                        <div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="@idExclusao">
+                                            Excluir
+                                        </div>
+                                    </a>
+                                </div>
+                            </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+
+
+<!--  SESSÃO DE SCRIPT (NÃO OBRIGATÓRIA) A SER EXECUTADA APÓS O CARREGAMENTO DESTA VIEW -->
+@section AfterScript {
+    <script type="text/javascript">
+        $(function () {
+            //Caso a tabela não tenha dados, será exibido um placeholder padrão
+            if ($("#filtered-table > tbody > tr").children().length === 0) {
+                var placeholder = "<p class='placeholder-table'>@Mensagens.PlaceholderTabelaConsulta</p>";
+                $("#filtered-table").before(placeholder);
+            }
+            else {
+                $("#filtered-table.inicializa-oculto").show("slide", 600);
+            }
+
+            $("#form-principal .mdl-textfield").each(function () {
+                if ($(this).val() !== "") {
+                    $(this).addClass("is-focused");
+                }
+            });
+
+            $(".secondary-action").click(function () {
+                $("#form-principal").attr("action", '@Url.Action("ObterTodos")');
+            });
+        });
+
+        function preparaFormEdicao_Invoke(cli, con) {
+            var changeActionTo = '@Url.Action("AtualizarPlanoDeContas")';
+            var getDataAjaxUrl = '@Url.Action("CarregaDadosEdicao")?cli=' + cli + '&con=' + con;
+            preparaFormEdicao(changeActionTo, getDataAjaxUrl);
+        }
+
+        function cancelarEdicao_Invoke() {
+            var changeActionTo = '@Url.Action("ResultadoPesquisa")';
+            cancelarEdicao(changeActionTo);
+        }
+
+        //necessário para o funcionamento do input do tipo slider (não está senrdo utilizado nesta página)
+        //$("#slider-value").html($("#slider1").val());
+        //function updateSliderValue(value) {
+        //    $("#slider-value").html(value);
+        //    posicionarTooltip(value);
+        //}
+        //function posicionarTooltip(value) {
+        //    $("#slider-value").css("margin-left", "12.3%");
+        //}
+    </script>
+}
+
+<script type="text/javascript" src="~/Scripts/DynamicActions/PlanoContasListagemEvents.js"></script>
+
+@section AfterStyle {
+    <style type="text/css">
+    </style>
+}

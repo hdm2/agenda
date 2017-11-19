@@ -1,0 +1,36 @@
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.Persistencia.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.Persistencia.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.Nucleo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\bin\Debug\Amon.Nucleo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\obj\Debug\Amon.Persistencia.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Persistencia\obj\Debug\Amon.Persistencia.pdb
+E:\Atualizacao\Persistencia\bin\Debug\Amon.Persistencia.dll
+E:\Atualizacao\Persistencia\bin\Debug\Amon.Persistencia.pdb
+E:\Atualizacao\Persistencia\bin\Debug\Amon.Nucleo.dll
+E:\Atualizacao\Persistencia\bin\Debug\Amon.PontoE.Modelo.dll
+E:\Atualizacao\Persistencia\bin\Debug\Amon.PontoE.Modelo.pdb
+E:\Atualizacao\Persistencia\bin\Debug\Amon.Nucleo.pdb
+E:\Atualizacao\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+E:\Atualizacao\Persistencia\obj\Debug\Amon.Persistencia.dll
+E:\Atualizacao\Persistencia\obj\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\obj\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Persistencia\obj\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.Persistencia.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\obj\Debug\Amon.Persistencia.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Persistencia\obj\Debug\Amon.Persistencia.pdb

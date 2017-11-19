@@ -1,0 +1,35 @@
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\Adozindo\git\Ponto\Amon.PontoE\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb
+E:\Atualizacao\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+E:\Atualizacao\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+E:\Atualizacao\Modelo\bin\Debug\Amon.Nucleo.dll
+E:\Atualizacao\Modelo\bin\Debug\Amon.Nucleo.pdb
+E:\Atualizacao\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+E:\Atualizacao\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+E:\Atualizacao\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\Atualizacao\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\FMB Transparencia\Modelo\bin\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\FMB Transparencia\Modelo\bin\Debug\Amon.PontoE.Modelo.pdb
+C:\Users\humbe\git\FMB Transparencia\Modelo\bin\Debug\Amon.Nucleo.dll
+C:\Users\humbe\git\FMB Transparencia\Modelo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\humbe\git\FMB Transparencia\Modelo\obj\Debug\Modelo.csprojResolveAssemblyReference.cache
+C:\Users\humbe\git\FMB Transparencia\Modelo\obj\Debug\Amon.PontoE.Modelo.dll
+C:\Users\humbe\git\FMB Transparencia\Modelo\obj\Debug\Amon.PontoE.Modelo.pdb

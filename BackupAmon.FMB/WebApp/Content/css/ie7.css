@@ -1,0 +1,17 @@
+﻿.smart-form .input .icon-append + INPUT {
+	padding-right: 37px !important;
+}
+.smart-form .input INPUT {
+    width: 95% !important;
+    height: auto !important;
+}
+.smart-form footer .btn {
+    float: none !important;
+}
+footer{
+    display: none !important;
+}
+
+.logo {
+    height: auto !important;
+}

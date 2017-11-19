@@ -1,0 +1,61 @@
+﻿.form-title {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.logo-header {
+    height: 30px;
+}
+
+.table-true-icon {
+    color:green;
+}
+
+.table-false-icon {
+    color:red;
+}
+
+.action-table-icon {
+    color:#444;
+    padding: 0 10px;
+}
+
+.validation-summary-errors {
+    background-color: #D86D6D;
+    border-radius: 4px;
+    color: white;
+}
+.validation-summary-errors > ul {
+    list-style: none;
+    text-indent: 4px;
+    padding:5px;
+}
+
+.sequential-column {
+    width:1px;
+}
+
+.centralized-spinner {
+    margin-left: 50%;
+    margin-top:50px;
+    display: none;
+}
+
+.notification-box {
+    display:none;
+    background-color: #fff;
+    border-left:solid 5px #1874CD;
+    opacity: 0.0;
+    border-radius: 2px;
+    min-height: 70px; 
+    min-width:250px; 
+    position:fixed;
+    z-index:10;
+    top:10px;
+    left:100px;
+    right:100px;
+    box-shadow: 0 9px 46px 8px rgba(0,0,0,.14),0 11px 15px -7px rgba(0,0,0,.12),0 2px 2px 2px rgba(0,0,0,.2);
+}
+.notification-box .close-icon {
+    cursor:pointer;
+    color:#333;
+}

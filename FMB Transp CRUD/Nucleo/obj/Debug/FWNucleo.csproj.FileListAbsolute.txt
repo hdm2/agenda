@@ -1,0 +1,4 @@
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\bin\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\bin\Debug\Amon.Nucleo.pdb
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\obj\Debug\Amon.Nucleo.dll
+C:\Users\felip\Documents\AMON\PROJETOS\FMB Transparencia\Nucleo\obj\Debug\Amon.Nucleo.pdb
